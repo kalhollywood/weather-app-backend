@@ -3,13 +3,17 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "node": "^16.17.0",
+    "nodemon": "^2.0.19",
     "pg": "^8.7.3"
   },
   "name": "weather-app-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node app.js",
+    "dev": "nodemon -r dotenv/config app.js"
   },
   "repository": {
     "type": "git",
